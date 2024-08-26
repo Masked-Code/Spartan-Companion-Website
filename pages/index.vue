@@ -19,7 +19,7 @@ const animationDuration = `5s`
 <style scoped>
 .gradient-text {
   display: inline-block;
-  background: linear-gradient(100deg, #828c94,  #738595, #738595, #bd0505, #738595, #738595, #828c94);
+  background: linear-gradient(100deg, #60a5fa,  #60a5fa, #60a5fa, #fa981f, #60a5fa, #60a5fa, #60a5fa);
   background-size: 200% 100%;
   background-clip: text;
   -webkit-background-clip: text;
