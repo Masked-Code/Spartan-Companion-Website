@@ -26,7 +26,7 @@
       </span> paperwork, processes & utilities <span class="gradient-text pb-4" :style="{ animationDuration: animationDuration }">made easy</span>.</div>
     </div>
   </div>
-  <div class="flex flex-col justify-center items-center mt-16 text-xl">Spartan Companion is a one stop shop, for sailors by sailors. Get your packages routed faster and easier with the most optimal information.</div>
+  <div class="flex flex-col justify-center items-center mt-24 text-xl">Spartan Companion is a one stop shop, for sailors by sailors. Get your packages routed faster and easier with the most optimal information.</div>
   <div class="flex flex-col justify-center items-center mt-2 text-xl">Learn new skills like web development or enterprise networking at a lightning-fast pace.</div>
   <div class="flex flex-col justify-center items-center mt-2 text-xl">Receive the lessons and experience passed down to make the Navy of tomorrow better than it is today.</div>
   <div class="flex flex-col justify-center items-center mt-12 text-xl">
