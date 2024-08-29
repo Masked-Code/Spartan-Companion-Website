@@ -1,5 +1,20 @@
 
 <template>
+    <div class="background-animation" id="animation-container">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
   <div class="flex flex-col justify-center items-center min-h-96 m-[5%] top-gradaient">
     <div class="mt-[30%] mb-[15%] mx-[20%] font-bold text-center">
       <div class="text-7xl p-10">
@@ -47,5 +62,92 @@ const animationDuration = `5s`
   margin: 0;
   height: 10vh;
   background: linear-gradient(to bottom, #0e5729 1%, transparent 99%);
+}
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+@keyframes riseUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-88vh);
+        opacity: 0;
+    }
+}
+
+.circle {
+    position: absolute;
+    bottom: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgba(0, 255, 0, 0.5);
+    border-radius: 50%;
+    animation: riseUp 8s ease-in infinite;
+}
+
+.circle:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+.circle:nth-child(2) {
+    left: 30%;
+    animation-delay: 2.2s;
+}
+.circle:nth-child(3) {
+    left: 50%;
+    animation-delay: 4.1s;
+}
+.circle:nth-child(4) {
+    left: 70%;
+    animation-delay: 6.7s;
+}
+.circle:nth-child(5) {
+    left: 90%;
+    animation-delay: 8.3s;
+}
+.circle:nth-child(6) {
+    left: 64%;
+    animation-delay: 1.2s;
+}
+.circle:nth-child(7) {
+    left: 02%;
+    animation-delay: 3s;
+}
+.circle:nth-child(8) {
+    left: 42%;
+    animation-delay: 5s;
+}
+.circle:nth-child(9) {
+    left: 90%;
+    animation-delay: 7s;
+}
+.circle:nth-child(10) {
+    left: 53%;
+    animation-delay: 9s;
+}
+.circle:nth-child(11) {
+    left: 70%;
+    animation-delay: 11s;
+}
+.circle:nth-child(12) {
+    left: 29%;
+    animation-delay: 5.7s;
+}
+.circle:nth-child(13) {
+    left: 21%;
+    animation-delay: 2.8s;
 }
 </style>
