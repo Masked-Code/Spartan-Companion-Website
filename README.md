@@ -1,4 +1,4 @@
-# Website built for the US Navy users at CWA-66 as a utility
+# Website utility built for US Navy sailors
 
 # Tech Stach
 - Typescript, Vue 3, Nuxt 3, NuxtUI, Supabase (auth & database)
