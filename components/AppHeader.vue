@@ -1,10 +1,10 @@
 <template>
-  <div class="rounded-3xl m-10 flex flex-row justify-between">
+  <div class="rounded-3xl m-2 flex flex-row justify-between">
     <div class="flex flex-row items-center">
-      <ULink to="/"><img class="m-3 rounded-2xl" src="@/assets/spartan.jpg" width="80" height="80" alt="Spartan Companion"/></ULink>
+      <ULink to="/"><img class="m-3" src="@/assets/crossed_swords.png" width="50" height="50" alt="Spartan Companion"/></ULink>
       <ULink class="flex text-center text-primary text-3xl" to="/">Spartan Companion</ULink>
     </div>
-    <div class="flex flex-row">
+    <div class="flex flex-row items-center">
       <ULink class="m-3 text-xl text-primary" to="https://www.mynavyhr.navy.mil" target="_blank">MyNavy-HR</ULink>
       <ULink class="m-3 text-xl text-primary" to="https://www.applocker.navy.mil" target="_blank">App-Locker</ULink>
       <ULink class="m-3 text-xl text-primary" to="https://my.navy.mil/quick-links.html" target="_blank">Quick-Links</ULink>
@@ -12,9 +12,24 @@
       <ULink class="m-3 text-xl text-primary" to="/login">Login</ULink>
     </div>
   </div>
+  <div class="flex flex-grow container">
+    <div class="flex flex-grow bottom-radial-gradient"></div>
+  </div>
 </template>
 <script lang="ts" setup>
 </script>
 
 <style>
+.container {
+    position: relative;
+}
+
+.bottom-radial-gradient {
+    position: fixed;
+    height: 0.2rem;
+    width: 100%;
+    background: radial-gradient(circle, #4ade80, transparent);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 </style>

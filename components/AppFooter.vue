@@ -1,15 +1,17 @@
 
 <template>
-  <UCard class="rounded-3xl m-10">
-      <div class="flex flex-row place-content-center">
-          <div class="mr-[5%]">
-          Created by Tristan Duin 👋
-          </div>
-          <div>
-          2024 - All Rights Reserved
-          </div>
-      </div>
+  <div class="bottom-fixed">
+  <UCard class="rounded-3xl m-5">
+    <div class="flex flex-row justify-around">
+    <div>
+    Created by Tristan Duin 👋
+    </div>
+    <div>
+    2024 - All Rights Reserved
+    </div>
+    </div>
   </UCard>
+</div>
 </template>
 
 
@@ -17,5 +19,10 @@
 </script>
 
 <style>
-
+.bottom-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 </style>

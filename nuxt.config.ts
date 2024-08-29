@@ -4,9 +4,6 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
-  content: {
-    // ... options
-  },
   supabase: {
     redirectOptions: {
       login: '/login',
@@ -20,7 +17,6 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     '@nuxtjs/color-mode',
     '@nuxt/icon',
-    '@nuxtjs/supabase',
-    '@nuxt/content'
+    '@nuxtjs/supabase'
   ]
 })
