@@ -9,11 +9,10 @@
       <ULink class="m-3 text-xl text-primary" to="https://www.applocker.navy.mil" target="_blank">App-Locker</ULink>
       <ULink class="m-3 text-xl text-primary" to="https://my.navy.mil/quick-links.html" target="_blank">Quick-Links</ULink>
       <ULink class="m-3 text-xl text-primary" to="/guides">Guides</ULink>
-      <ULink class="m-3 text-xl text-primary" to="/login">Login</ULink>
     </div>
-    <div class="flex flex-row items-center">
-     <UButton class="m-1" color="primary" variant="link">Log In</UButton>
-     <UButton class="m-1" color="primary" variant="solid">Sign Up</UButton>
+    <div class="flex flex-row items-center mr-8">
+     <UButton class="m-4" size="lg" color="primary" variant="link">Log In</UButton>
+     <UButton class="m-4" size="lg" color="primary" variant="solid">Sign Up</UButton>
     </div>
   </div>
   <div class="flex flex-grow container">
