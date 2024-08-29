@@ -11,6 +11,10 @@
       <ULink class="m-3 text-xl text-primary" to="/guides">Guides</ULink>
       <ULink class="m-3 text-xl text-primary" to="/login">Login</ULink>
     </div>
+    <div class="flex flex-row items-center">
+     <UButton class="m-1" color="primary" variant="link">Log In</UButton>
+     <UButton class="m-1" color="primary" variant="solid">Sign Up</UButton>
+    </div>
   </div>
   <div class="flex flex-grow container">
     <div class="flex flex-grow bottom-radial-gradient"></div>
