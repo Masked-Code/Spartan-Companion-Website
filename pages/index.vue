@@ -1,32 +1,38 @@
 
 <template>
-    <div class="background-animation" id="animation-container">
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
+    <div>
+        <div class="background-animation" id="animation-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        </div>
+        <div class="flex flex-col justify-center items-center min-h-96 m-[5%] top-gradaient">
+            <div class="mt-[30%] mb-[15%] mx-[20%] font-bold text-center">
+                <div class="text-7xl p-10 gradient-text" :style="{ animationDuration: animationDuration }">
+                    <span>Navy</span><span class="text-white"> paperwork, processes & utilities </span><span>made easy</span><span class="text-white">.</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-20 text-xl">Spartan Companion is a one stop shop, for sailors by sailors. Get your packages routed faster and easier with the most optimal information.</div>
+        <div class="flex flex-col justify-center items-center mt-2 text-xl">Learn new skills like web development or enterprise networking at a lightning-fast pace.</div>
+        <div class="flex flex-col justify-center items-center mt-2 text-xl">Receive the lessons and experience passed down to make the Navy of tomorrow better than it is today.</div>
+        <div class="flex flex-col justify-center items-center mt-12 text-xl">
+        <UButton icon="i-heroicons-arrow-right" :trailing="true">Get Started</UButton>
+        </div>
     </div>
-  <div class="flex flex-col justify-center items-center min-h-96 m-[5%] top-gradaient">
-    <div class="mt-[30%] mb-[15%] mx-[20%] font-bold text-center">
-      <div class="text-7xl p-10 gradient-text" :style="{ animationDuration: animationDuration }">
-      <span>Navy</span><span class="text-white"> paperwork, processes & utilities </span><span>made easy</span>.</div>
-    </div>
-  </div>
-  <div class="flex flex-col justify-center items-center mt-20 text-xl">Spartan Companion is a one stop shop, for sailors by sailors. Get your packages routed faster and easier with the most optimal information.</div>
-  <div class="flex flex-col justify-center items-center mt-2 text-xl">Learn new skills like web development or enterprise networking at a lightning-fast pace.</div>
-  <div class="flex flex-col justify-center items-center mt-2 text-xl">Receive the lessons and experience passed down to make the Navy of tomorrow better than it is today.</div>
-  <div class="flex flex-col justify-center items-center mt-12 text-xl">
-    <UButton icon="i-heroicons-arrow-right" :trailing="true">Get Started</UButton>
-  </div>
 </template>
   
 <script setup lang="ts">
@@ -78,8 +84,8 @@ const animationDuration = `5s`
         opacity: 0.7;
     }
     100% {
-        transform: translateY(-88vh);
-        opacity: 0;
+        transform: translateY(-100vh);
+        opacity: 0.9;
     }
 }
 
@@ -90,59 +96,87 @@ const animationDuration = `5s`
     height: 0.5rem;
     background-color: rgba(0, 255, 0, 0.5);
     border-radius: 50%;
-    animation: riseUp 8s ease-in infinite;
+    animation: riseUp 6s ease-in infinite;
 }
 
 .circle:nth-child(1) {
     left: 10%;
     animation-delay: 0s;
+    opacity: 0; 
 }
 .circle:nth-child(2) {
     left: 30%;
     animation-delay: 2.2s;
+    opacity: 0; 
 }
 .circle:nth-child(3) {
     left: 50%;
     animation-delay: 4.1s;
+    opacity: 0; 
 }
 .circle:nth-child(4) {
     left: 70%;
     animation-delay: 6.7s;
+    opacity: 0; 
 }
 .circle:nth-child(5) {
     left: 90%;
     animation-delay: 8.3s;
+    opacity: 0; 
 }
 .circle:nth-child(6) {
     left: 64%;
     animation-delay: 1.2s;
+    opacity: 0; 
 }
 .circle:nth-child(7) {
     left: 02%;
     animation-delay: 3s;
+    opacity: 0; 
 }
 .circle:nth-child(8) {
     left: 42%;
     animation-delay: 5s;
+    opacity: 0; 
 }
 .circle:nth-child(9) {
     left: 90%;
     animation-delay: 7s;
+    opacity: 0; 
 }
 .circle:nth-child(10) {
     left: 53%;
     animation-delay: 9s;
+    opacity: 0; 
 }
 .circle:nth-child(11) {
     left: 70%;
     animation-delay: 11s;
+    opacity: 0; 
 }
 .circle:nth-child(12) {
     left: 29%;
     animation-delay: 5.7s;
+    opacity: 0; 
 }
 .circle:nth-child(13) {
     left: 21%;
     animation-delay: 2.8s;
+    opacity: 0; 
+}
+.circle:nth-child(14) {
+    left: 79%;
+    animation-delay: 2.7s;
+    opacity: 0; 
+}
+.circle:nth-child(15) {
+    left: 92%;
+    animation-delay: 7.8s;
+    opacity: 0; 
+}
+.circle:nth-child(16) {
+    left: 55%;
+    animation-delay: 0.8s;
+    opacity: 0; 
 }
 </style>
