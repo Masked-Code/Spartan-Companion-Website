@@ -5,14 +5,18 @@
       <ULink class="flex text-center text-primary text-3xl" to="/">Spartan Companion</ULink>
     </div>
     <div class="flex flex-row items-center">
-      <ULink class="m-3 text-xl text-primary" to="https://www.mynavyhr.navy.mil" target="_blank">MyNavy-HR</ULink>
-      <ULink class="m-3 text-xl text-primary" to="https://www.applocker.navy.mil" target="_blank">App-Locker</ULink>
-      <ULink class="m-3 text-xl text-primary" to="https://my.navy.mil/quick-links.html" target="_blank">Quick-Links</ULink>
-      <ULink class="m-3 text-xl text-primary" to="/guides">Guides</ULink>
+      <UButton class="m-3 text-lg text-primary" variant="link" to="https://www.mynavyhr.navy.mil" target="_blank">MyNavy-HR</UButton>
+      <UButton class="m-3 text-lg text-primary" variant="link" to="https://www.applocker.navy.mil" target="_blank">App-Locker</UButton>
+      <UButton class="m-3 text-lg text-primary" variant="link" to="https://my.navy.mil/quick-links.html" target="_blank">Quick-Links</UButton>
+      <UButton class="m-3 text-lg text-primary" variant="link" to="/guides">Guides</UButton>
+      <UButton class="m-3 text-lg text-primary" variant="link" to="/scope">Scope</UButton>
+      <UDropdown :items="items" :popper="{ placement: 'bottom-start' }">
+        <UButton color="primary" label="Paperwork" trailing-icon="i-heroicons-chevron-down-20-solid" />
+      </UDropdown>
     </div>
     <div class="flex flex-row items-center mr-8">
-     <UButton class="m-4" size="lg" color="primary" variant="link">Log In</UButton>
-     <UButton class="m-4" size="lg" color="primary" variant="solid">Sign Up</UButton>
+     <UButton class="m-4 text-lg" size="md" color="primary" variant="link">Log In</UButton>
+     <UButton class="m-4 text-lg" size="md" color="primary" variant="solid">Sign Up</UButton>
     </div>
   </div>
   <div class="flex flex-grow container">
@@ -20,6 +24,17 @@
   </div>
 </template>
 <script lang="ts" setup>
+const items = [ 
+  [{
+    label: 'LaDR/OaRS',
+    icon: 'i-heroicons-newspaper',
+    href: '/ladr'
+  }, {
+    label: 'Bibliogrophies',
+    icon: 'i-heroicons-document',
+    href: '/bibs'
+  }]
+]
 </script>
 
 <style>
