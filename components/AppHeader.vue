@@ -28,11 +28,13 @@ const items = [
   [{
     label: 'LaDR/OaRS',
     icon: 'i-heroicons-newspaper',
-    href: '/ladr'
+    href: 'https://www.cool.osd.mil/usn/all_ladrs.html?utm_source=mnp%20public',
+    target: '_blank'
   }, {
     label: 'Bibliogrophies',
     icon: 'i-heroicons-document',
-    href: '/bibs'
+    href: 'https://www.cool.osd.mil/usn/moc/index.html?moc=cwt&tab=overview',
+    target: '_blank'
   }]
 ]
 </script>

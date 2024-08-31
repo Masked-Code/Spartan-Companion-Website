@@ -7,6 +7,17 @@
       <div>A sailor should be able to store a backup of their records via their own volition.</div>
       <div>A sailor should be able to edit and maintain packages with effective supporting information and utilities.</div>
       <div>A sailor should be able to connect and communicate with sailors with similar experiences and needs.</div>
+
+      <div class="m-4 text-2xl font-bold">Functional Objectives:</div>
+      <ul>
+        <li>Store, edit and retrieve Evals</li>
+        <li>Create, maintain and save packages</li>
+        <li>Message Boards for sailors & leadership to communicate</li>
+        <li>Career Path Options & Guidance</li>
+        <li>College & Certification Information</li>
+        <li>Leadership Knowledge Passdown</li>
+        <li>Guides for becoming an effective CWT</li>
+      </ul>
     </div>
   </UCard>
 </template>

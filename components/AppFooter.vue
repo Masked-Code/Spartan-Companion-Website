@@ -4,7 +4,7 @@
   <UCard class="rounded-3xl m-5">
     <div class="flex flex-row justify-around place-items-center">
     <div>
-    Created by Tristan Duin 👋
+    Created by CWT2 Duin👋
     </div>
     <UButton to="/tos" variant="link" class="text-primary">
     Terms Of Service
