@@ -2,7 +2,7 @@
   <NuxtLayout>
     <AppHeader />
     <div>
-      <NuxtPage />
+      <NuxtPage keepalive/>
     </div>
     <AppFooter />
   </NuxtLayout>
