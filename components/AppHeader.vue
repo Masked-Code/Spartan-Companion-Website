@@ -35,6 +35,10 @@ const items = [
     icon: 'i-heroicons-document',
     href: 'https://www.cool.osd.mil/usn/moc/index.html?moc=cwt&tab=overview',
     target: '_blank'
+  }, {
+    label: 'Eval Builder',
+    icon: 'i-heroicons-wrench-screwdriver',
+    href: '/evalbuilder'
   }]
 ]
 </script>
