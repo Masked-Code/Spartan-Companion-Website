@@ -1,6 +1,6 @@
 
 <template>
-  <div class="bottom-fixed">
+  <div>
   <UCard class="rounded-3xl m-5">
     <div class="flex flex-row justify-around place-items-center">
     <div>
