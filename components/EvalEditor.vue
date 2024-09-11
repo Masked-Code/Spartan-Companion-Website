@@ -73,31 +73,31 @@
         <UInput v-model="state.block22" placeholder="LAST, F M" size="xl" />
       </UFormGroup>
       <UFormGroup label="Reporting Senior's Grade" name="block23" eager-validation required class="m-2 ">
-        <UInput v-model="state.block23" placeholder="LAST, FIRST M" size="xl" />
+        <USelect v-model="state.block25" placeholder="Select..." :options="reportingSeniorGradeOptions" option-attribute="label" size="xl"/>
       </UFormGroup>
       <UFormGroup label="Reporting Senior's Desig" name="block24" eager-validation required class="m-2 ">
-        <UInput v-model="state.block24" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block24" placeholder="1234" size="xl" />
       </UFormGroup>
       <UFormGroup label="Reporting Senior's Title" name="block25" eager-validation required class="m-2 ">
-        <UInput v-model="state.block25" placeholder="LAST, FIRST M" size="xl" />
+        <USelect v-model="state.block25" placeholder="Select..." :options="reportingSeniorTitleOptions" option-attribute="label" size="xl"/>
       </UFormGroup>
       <UFormGroup label="Reporting Senior's UIC" name="block26" eager-validation required class="m-2 ">
-        <UInput v-model="state.block26" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block26" placeholder="12345" size="xl" />
       </UFormGroup>
       <UFormGroup label="Reporting Senior's SSN" name="block27" eager-validation required class="m-2 ">
-        <UInput v-model="state.block27" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block27" placeholder="XXX-XX-XXXX" size="xl" />
       </UFormGroup>
       <UFormGroup label="Command Employment And Command Achievements" name="block28" eager-validation required class="m-2 ">
-        <UInput v-model="state.block28" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block28" placeholder="COMMAND'S STANDARD ROLE BULLET" size="xl" />
       </UFormGroup>
       <UFormGroup label="Primary, Collateral, And Watchstanding Duties" name="block29" eager-validation required class="m-2 ">
-        <UInput v-model="state.block29" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block29" placeholder="ROLE NAME & LENGHT - DESCRIPTION - COLL" size="xl" />
       </UFormGroup>
       <UFormGroup label="Date Counseled" name="block30" eager-validation required class="m-2 ">
-        <UInput v-model="state.block30" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block30" placeholder="DATE PICKER" size="xl" />
       </UFormGroup>
       <UFormGroup label="Counselor" name="block31" eager-validation required class="m-2 ">
-        <UInput v-model="state.block31" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block31" placeholder="LAST, F M" size="xl" />
       </UFormGroup>
       <UFormGroup label="Signature Of Individual Counseled" name="block32" eager-validation required class="m-2 ">
         <div>Signature</div>
@@ -127,16 +127,16 @@
         <div>Average of Above</div>
       </UFormGroup>
       <UFormGroup label="Requested Futures" name="block41" eager-validation required class="m-2 ">
-        <UInput v-model="state.block41" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block41" placeholder="RATINGS, PROGRRAMS, OTHER" size="xl" />
       </UFormGroup>
       <UFormGroup label="Signature Of Rater" name="block42" eager-validation required class="m-2 ">
         <div>Signature</div>
       </UFormGroup>
       <UFormGroup label="Comments On Performance" name="block43" eager-validation required class="m-2 ">
-        <UInput v-model="state.block43" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block43" placeholder="INFO" size="xl" />
       </UFormGroup>
       <UFormGroup label="Qualifications / Achievements" name="block44" eager-validation required class="m-2 ">
-        <UInput v-model="state.block44" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block44" placeholder="INFO" size="xl" />
       </UFormGroup>
       <UFormGroup label="Individial Promotion Recommendation" name="block45" eager-validation required class="m-2 ">
         <UInput v-model="state.block45" placeholder="LAST, FIRST M" size="xl" />
@@ -145,10 +145,10 @@
         <UInput v-model="state.block46" placeholder="LAST, FIRST M" size="xl" />
       </UFormGroup>
       <UFormGroup label="Retention" name="block47" eager-validation required class="m-2 ">
-        <UInput v-model="state.block47" placeholder="LAST, FIRST M" size="xl" />
+        <USelect v-model="state.block47" placeholder="Select..." :options="retentionOptions" option-attribute="label" size="xl"/>
       </UFormGroup>
       <UFormGroup label="Reporting Senior Address" name="block48" eager-validation required class="m-2 ">
-        <UInput v-model="state.block48" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block48" placeholder="ADDRESS" size="xl" />
       </UFormGroup>
       <UFormGroup label="Signature Of Senior Rater" name="block49" eager-validation required class="m-2 ">
         <div>Signature</div>
@@ -160,7 +160,7 @@
         <div>Signature</div>
       </UFormGroup>
       <UFormGroup label="Regular Reporting Senior Information" name="block52" eager-validation required class="m-2 ">
-        <UInput v-model="state.block52" placeholder="LAST, FIRST M" size="xl" />
+        <UInput v-model="state.block52" placeholder="INFO" size="xl" />
       </UFormGroup>
 
       <UButton type="submit">Submit</UButton>
@@ -254,6 +254,71 @@ const physicalFitnessOptions = [
   }, {
     label: 'Waived',
     value: 'waived',
+  }
+]
+
+const reportingSeniorGradeOptions = [
+  {
+    label: 'O-10 ADMIRAL',
+    value: 'adm'
+  },
+  {
+    label: 'O-9 VICE ADMIRAL',
+    value: 'vadm'
+  },
+  {
+    label: 'O-8 REAR ADMIRAL (UPPER HALF)',
+    value: 'radmu'
+  },
+  {
+    label: 'O-7 REAR ADMIRAL (LOWER HALF)',
+    value: 'radml'
+  },
+  {
+    label: 'O-6 CAPTAIN',
+    value: 'capt'
+  },
+  {
+    label: 'O-5 COMMANDER',
+    value: 'cmdr'
+  },
+  {
+    label: 'O-4 LIEUTENANT COMMANDER',
+    value: 'lcdr'
+  },
+  {
+    label: 'O-3 LIEUTENANT',
+    value: 'lt'
+  },
+  {
+    label: 'O-2 LIEUTENANT JUNIOR GRADE',
+    value: 'ltjg'
+  },
+  {
+    label: 'O-1 ENSIGN',
+    value: 'ens'
+  }
+]
+
+const reportingSeniorTitleOptions = [
+  {
+    label: 'CO',
+    value: 'co'
+  }, {
+    label: 'XO',
+    value: 'xo'
+  },
+  {
+    label: 'CMC',
+    value: 'cmc'
+  },
+  {
+    label: 'OIC',
+    value: 'oic'
+  },
+  {
+    label: 'OTHER',
+    value: 'other'
   }
 ]
 
@@ -415,6 +480,16 @@ const leadershipOptions = [{
   value: '5',
   label: 'Greatly Exceeds Standards'
 }]
+
+const retentionOptions = [
+  {
+    label: 'Recommended',
+    value: 'recommended'
+  }, {
+    label: 'Not Recommended',
+    value: 'notrecommended'
+  }
+]
 
 const selectedLeadership = ref('3')
 

@@ -29,7 +29,7 @@
         <div class="flex flex-col justify-center items-center mt-[8%] text-xl">Spartan Companion is a one stop shop, for sailors by sailors. Get your packages routed faster and easier with the most optimal information.</div>
         <div class="flex flex-col justify-center items-center mt-2 text-xl">Learn new skills like web development or enterprise networking at a lightning-fast pace.</div>
         <div class="flex flex-col justify-center items-center mt-2 text-xl">Receive the lessons and experience passed down to make the Navy of tomorrow better than it is today.</div>
-        <div class="flex flex-col justify-center items-center mt-12 text-xl">
+        <div class="flex flex-col justify-center items-center m-12 mb-[15%] text-xl">
         <UButton icon="i-heroicons-arrow-right" :trailing="true">Get Started</UButton>
         </div>
     </div>
